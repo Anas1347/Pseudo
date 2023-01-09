@@ -21,3 +21,54 @@ width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.transform{
+    margin-top: 200px;
+}
+.box, .trans{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rebeccapurple;
+}
+.box{
+   
+    background-color: aqua;
+}
+.trans{
+    background-color: blanchedalmond;
+    transform:translate(50px, 50px) scale(.50) rotate(-45deg);
+}
+.boxx{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    background-color: aqua;
+    transition: width 2s , height 2s, transform 3s;
+}
+.boxx:hover{
+width: 200px;
+height: 200px;
+transform: rotate(360deg);
+}
+.field:hover .bat{
+    transform: rotate(-70deg);
+    transform-origin: top right;
+}
+/* .field{
+    border: 1px solid rebeccapurple;
+    background-color: chartreuse;
+} */
+.bat{
+transition: transform .7s ease-in;
+}
+.ball{
+    width: 25PX;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 340px;
+    transition: transform 1.4s ease-out .7s;
+}
+.field:hover .ball{
+transform:translate(500px, -300px);
+}
