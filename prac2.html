@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3be32a9981.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .flex {
+        font-size: 3ex;
+        font-weight: 700;
+        height: 400px;
+        border: 2px dashed red;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        border: 2px dotted rgb(25, 58, 202);
+      }
+      .formc {
+        display: flex;
+        justify-content: center;
+      }
+      .form {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .form input {
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 5px 10px;
+      }
+      .form input[type="button"] {
+        background-color: aqua;
+        border: 0;
+        border-radius: 5px;
+        color: aliceblue;
+        font-weight: 700;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        text-decoration: none;
+        padding: 0 10px;
+      }
+      .grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .item{
+        border: 1px solid;
+        font-size: 1.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+      <div class="box">box 6</div>
+      <div class="box">box 6</div>
+      <div class="box">box 6</div>
+      <div class="box">box 6</div>
+    </div>
+    <nav>
+      <span>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Profile</a>
+      </span>
+      <span>
+        <a href=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+      </span>
+    </nav>
+    <section class="formc">
+      <form class="form">
+        <h3>Please Login</h3>
+        <input type="Email" placeholder="Your Email" />
+        <input type="password" name="" id="" placeholder="Your Password" />
+        <input type="button" value="Login" />
+      </form>
+    </section>
+    <div class="grid">
+      <div class="item">item-1</div>
+      <div class="item">item-2</div>
+      <div class="item">item-3</div>
+      <div class="item">item-4</div>
+      <div class="item">item-5</div>
+      <div class="item">item-6</div>
+      <div class="item">item-7</div>
+      <div class="item">item-8</div>
+      <div class="item">item-9</div>
+      <div class="item">item-10</div>
+      <div class="item">item-11</div>
+      <div class="item">item-12</div>
+      <div class="item">item-13</div>
+      <div class="item">item-14</div>
+      <div class="item">item-15</div>
+      <div class="item">item-16</div>
+      <div class="item">item-17</div>
+      <div class="item">item-18</div>
+      <div class="item">item-19</div>
+      <div class="item">item-20</div>
+    </div>
+  </body>
+</html>
